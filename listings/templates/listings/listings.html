@@ -1,0 +1,15 @@
+
+<html>
+      <head><title>Merchex</title></head>
+      <body>
+        {% extends 'listings/base.html' %}
+        {% block content %}
+          <h1>Hello Django 2!</h1>
+          <p>Affiche de mes groupes préférés sont:</p>   
+          <p>{% for title in titles%}
+            {{title.name}},
+            {% endfor %}
+        </p>
+        {% endblock %}
+      </body>
+  </html
